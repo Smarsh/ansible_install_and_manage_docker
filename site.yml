@@ -1,0 +1,8 @@
+---
+- name: Setup Exim and dependencies
+  hosts: all
+  gather_facts: yes
+  become: true
+
+  roles:
+    - exim
